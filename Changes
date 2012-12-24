@@ -1,0 +1,5 @@
+Revision history for Perl extension Plack::Middleware::HTMLLint
+
+0.01 2012-12-24
+    - original version; created by dim
+      at Mon Dec 24 03:29:39 2012.
