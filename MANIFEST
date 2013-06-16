@@ -1,19 +1,17 @@
 .dimconfig
-.shipit
+.gitignore
 Build.PL
 Changes
+LICENSE
+META.json
+README.md
+README.mkdn
+author/requires.cpanm
+cpanfile
 ex/normal.psgi
 ex/streaming.psgi
 lib/Plack/Middleware/HTMLLint.pm
 lib/Plack/Middleware/HTMLLint/Pluggable.pm
-LICENSE
-Makefile.PL
-MANIFEST			This list of files
-MANIFEST.SKIP
-META.json
-META.yml
-README
-README.mkdn
 t/000_load.t
 t/001_basic.t
 t/002_pluggable.t
@@ -22,3 +20,8 @@ xt/pod.t
 xt/podcoverage.t
 xt/podspell.t
 xt/podsynopsis.t
+Build.PL
+LICENSE
+META.json
+META.yml
+MANIFEST

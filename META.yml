@@ -1,10 +1,10 @@
 ---
 abstract: "check syntax with HTML::Lint for PSGI application's response HTML"
 author:
-  - 'Kenta Sato E<lt>karupa@cpan.orgE<gt>'
+  - 'Kenta Sato <karupa@cpan.org>'
 build_requires:
   HTTP::Request: 0
-  Module::Build::Pluggable::ReadmeMarkdownFromPod: 0.02
+  Module::Build::Pluggable::ReadmeMarkdownFromPod: 0.04
   Module::Build::Pluggable::Repository: 0.01
   Plack::Builder: 0
   Plack::Test: 0
@@ -12,12 +12,14 @@ build_requires:
   Test::More: 0.88
   Test::Requires: 0.06
 configure_requires:
-  Module::Build: 0.40
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
+  Module::Build: 0.38
   Module::Build::Pluggable: 0.04
-  Module::Build::Pluggable::ReadmeMarkdownFromPod: 0.02
+  Module::Build::Pluggable::ReadmeMarkdownFromPod: 0.04
   Module::Build::Pluggable::Repository: 0.01
 dynamic_config: 0
-generated_by: 'Module::Build version 0.4003, CPAN::Meta::Converter version 2.120630'
+generated_by: 'Minilla/v0.0.53, CPAN::Meta::Converter version 2.130880'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -25,14 +27,19 @@ meta-spec:
 name: Plack-Middleware-HTMLLint
 no_index:
   directory:
+    - t
+    - xt
     - inc
+    - share
+    - eg
+    - examples
 provides:
   Plack::Middleware::HTMLLint:
     file: lib/Plack/Middleware/HTMLLint.pm
-    version: 0.01
+    version: 0.02
   Plack::Middleware::HTMLLint::Pluggable:
     file: lib/Plack/Middleware/HTMLLint/Pluggable.pm
-    version: 0.01
+    version: 0.02
 requires:
   HTML::Escape: 0
   HTML::Lint: 0
@@ -43,6 +50,7 @@ requires:
   parent: 0
   perl: 5.009_004
 resources:
-  license: http://dev.perl.org/licenses/
+  bugtracker: https://github.com/karupanerura/p5-Plack-Middleware-HTMLLint/issues
+  homepage: https://github.com/karupanerura/p5-Plack-Middleware-HTMLLint
   repository: git://github.com/karupanerura/p5-Plack-Middleware-HTMLLint.git
-version: 0.01
+version: 0.02

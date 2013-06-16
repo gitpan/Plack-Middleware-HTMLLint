@@ -1,13 +1,11 @@
 {
    "abstract" : "check syntax with HTML::Lint for PSGI application's response HTML",
    "author" : [
-      "Kenta Sato E<lt>karupa@cpan.orgE<gt>"
+      "Kenta Sato <karupa@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Module::Build version 0.4003, CPAN::Meta::Converter version 2.120630",
-   "license" : [
-      "perl_5"
-   ],
+   "generated_by" : "Minilla/v0.0.53",
+   "license" : "perl_5",
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
@@ -15,28 +13,39 @@
    "name" : "Plack-Middleware-HTMLLint",
    "no_index" : {
       "directory" : [
-         "inc"
+         "t",
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples"
       ]
    },
    "prereqs" : {
       "build" : {
          "requires" : {
-            "HTTP::Request" : "0",
-            "Module::Build::Pluggable::ReadmeMarkdownFromPod" : "0.02",
+            "Module::Build::Pluggable::ReadmeMarkdownFromPod" : "0.04",
             "Module::Build::Pluggable::Repository" : "0.01",
-            "Plack::Builder" : "0",
-            "Plack::Test" : "0",
-            "Pod::Markdown" : "0",
-            "Test::More" : "0.88",
-            "Test::Requires" : "0.06"
+            "Pod::Markdown" : "0"
          }
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.40",
+            "CPAN::Meta" : "0",
+            "CPAN::Meta::Prereqs" : "0",
+            "Module::Build" : "0.38",
             "Module::Build::Pluggable" : "0.04",
-            "Module::Build::Pluggable::ReadmeMarkdownFromPod" : "0.02",
+            "Module::Build::Pluggable::ReadmeMarkdownFromPod" : "0.04",
             "Module::Build::Pluggable::Repository" : "0.01"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Pod::Wordlist::hanekomu" : "0",
+            "Test::CPAN::Meta" : "0",
+            "Test::MinimumVersion" : "0.10108",
+            "Test::Pod" : "1.41",
+            "Test::Spelling" : "0"
          }
       },
       "runtime" : {
@@ -50,26 +59,37 @@
             "parent" : "0",
             "perl" : "5.009_004"
          }
+      },
+      "test" : {
+         "requires" : {
+            "HTTP::Request" : "0",
+            "Plack::Builder" : "0",
+            "Plack::Test" : "0",
+            "Test::More" : "0.88",
+            "Test::Requires" : "0.06"
+         }
       }
    },
    "provides" : {
       "Plack::Middleware::HTMLLint" : {
          "file" : "lib/Plack/Middleware/HTMLLint.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       },
       "Plack::Middleware::HTMLLint::Pluggable" : {
          "file" : "lib/Plack/Middleware/HTMLLint/Pluggable.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       }
    },
    "release_status" : "stable",
    "resources" : {
-      "license" : [
-         "http://dev.perl.org/licenses/"
-      ],
+      "bugtracker" : {
+         "web" : "https://github.com/karupanerura/p5-Plack-Middleware-HTMLLint/issues"
+      },
+      "homepage" : "https://github.com/karupanerura/p5-Plack-Middleware-HTMLLint",
       "repository" : {
-         "url" : "git://github.com/karupanerura/p5-Plack-Middleware-HTMLLint.git"
+         "url" : "git://github.com/karupanerura/p5-Plack-Middleware-HTMLLint.git",
+         "web" : "https://github.com/karupanerura/p5-Plack-Middleware-HTMLLint"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
